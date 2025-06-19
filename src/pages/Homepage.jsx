@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import Featurework from '../components/Featurework'
 import WhatICanDo from '../components/WhatICanDo'
 import HomeServices from '../components/HomeServices'
+import Contact from '../components/Contact'
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
         <Featurework/>
         <WhatICanDo/>
         <HomeServices/>
+        <Contact/>
     </main>
   )
 }

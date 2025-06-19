@@ -561,7 +561,7 @@
 }
 
 
-
+/* our services for the homepage */
 .primary-contact{
   display: flex;
   justify-content: center;
@@ -574,18 +574,304 @@
   padding: 12px 24px;
   border-radius: 8px;
   color: #667EEA;
-
+  text-decoration: none;
+  font-size: 1rem;
   width: 20%;
 
   transition: all 0.3s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
 }
 
-.primary-contact .btn-unqiue:hover{
+.primary-contact .btn-unqiue span:nth-child(2){
+  margin-bottom: .3rem;
+}
+
+.primary-contact .btn-unqiue:nth-child(1){
+  background-color: var(--primary-content);
+  color: var(--copy);
+  border-color: var(--primary-content);
+}
+
+.primary-contact .btn-unqiue:hover, .primary-contact .btn-unqiue:nth-child(1):hover{
   background: #667EEA;
+  color: white;
+  text-decoration: none;
+}
+
+/*-------------- Contact Section -----------------*/
+.contact {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
   color: white;
 }
 
+.contact .section-tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
 
+.contact .section-header h2,
+.contact .section-header p {
+  color: white;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+.contact-info-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-benefits {
+  margin: 2rem 0;
+}
+
+.benefit {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.benefit-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.benefit-text h4 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-text p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+}
+
+.contact-methods {
+  margin-top: 2rem;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.method-icon {
+  font-size: 1.25rem;
+}
+
+.method-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.method-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.method-value {
+  color: white;
+  font-weight: 500;
+}
+.method-value-socials{
+  display: flex;
+  gap: 1rem;
+  
+}
+
+.method-value-socials a{
+  color: white;
+}
+
+.contact-form-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667EEA;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+select option {
+  opacity: 0;
+  color: var(--copy); /* text color of dropdown items */
+  background-color: var(--bg-main); /* background of dropdown items */
+  font-size: .8rem;
+  height: max-content;
+  transition: all 0.3s ease;
+  transform: translateY(10px);
+}
+
+select {
+  
+  transition: all 0.3s ease;
+}
+
+/* On page load or focus (trigger animation) */
+
+select:focus option {
+  opacity: 1;
+  transform: translateY(0);
+
+}
+
+.form-note {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-loading {
+  display: none;
+}
+
+.contact-form.loading .btn-text {
+  display: none;
+}
+
+.contact-form.loading .btn-loading {
+  display: inline;
+}
+
+/*------------------- Footer -----------------*/
+.footer {
+  background: #1a202c;
+  color: white;
+  padding: 4rem 0 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 1rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-column h4 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #667EEA;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 2rem;
+
+}
+
+.footer-bottom-links a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+
+  display: flex;
+  gap: .7rem;
+}
+
+.footer-bottom-links a:hover {
+  color: #667EEA;
+}
 
 
 /* Responsive Design */
@@ -615,10 +901,7 @@
       grid-template-columns: 1fr;
       gap: 2rem;
   } */
-  .contact-info-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
+
   
   .whatICanItems{
     display: flex;
@@ -640,7 +923,7 @@
 
 
 }
-
+/* ------------------------------- */
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -759,13 +1042,17 @@
   h3 {
     font-size: 1.5rem;
   }
+  /* what i can do */
+  .whatICanItemsContainer{
+    width: 100%;
+  }
+  
+  /* contact */
+  .contact-info-grid {
+    grid-template-columns: 1fr; /* stack */
+  }
 }
-
-/* what i can do */
-
-.whatICanItemsContainer{
-  width: 100%;
-}
+/* ------------------------------------ */
 
 @media (max-width: 480px) {
   .container {
@@ -836,3 +1123,4 @@
   }
 
 }
+/* ----------------------------------- */

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import whatsappIcon from '/whatsapp.svg'
+import emailIcon from '/email.svg'
 
 const HomeServices = () => {
   return (
@@ -11,8 +13,9 @@ const HomeServices = () => {
                 <p>Every business is unique. Let's discuss your specific requirements and create Link solution that fits perfectly.</p>
 
                 <div className="primary-contact">
-                    <Link to="" className="btn-unqiue" target="_blank">Email</Link>
-                    <Link to="#contact" className="btn-unqiue" target="_blank">WhatsApp</Link>
+                <Link to="#contact" className="btn-unqiue" target="_blank"> <span><img src={whatsappIcon} alt="whatsapp-icon" /></span> <span>WhatsApp</span></Link>
+
+                    <Link to="" className="btn-unqiue" target="_blank"> <span><img src={emailIcon} alt="email-icon" /></span> <span>Email</span></Link>
                 </div>
         </div> 
         </div>
