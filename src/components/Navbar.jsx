@@ -46,7 +46,8 @@ const Navbar = () => {
         <nav className={`navbar ${scrolled ? "scrolled" : ""}`} id="navbar">
             <div className="nav-container">
                 <div className="nav-logo">
-                    <span className="logo-text">@Clifford</span>
+                    
+                    <span className="logo-text">Clifford</span>
                     <span className="logo-subtitle">Bsc. Computer Science</span>
                 </div>
 
