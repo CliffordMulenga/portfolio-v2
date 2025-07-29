@@ -5,12 +5,12 @@ import WhatICanDo from '../components/WhatICanDo'
 import HomeServices from '../components/HomeServices'
 import Contact from '../components/Contact'
 import { Button } from '@/components/ui/button'
+import Herosection from '@/components/Herosection'
 
 const Homepage = () => {
   return (
     <main>
-        <Hero/>
-        <Button>Test Button</Button>
+        <Herosection/>
         <Featurework/>
         <WhatICanDo/>
         <HomeServices/>

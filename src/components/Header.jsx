@@ -24,7 +24,7 @@ const logo = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill
 
 export default function Header() {
   return (
-    <header className="border-b px-4 md:px-6">
+    <header className="w-full fixed top-0 left-0 z-50 border-b px-4 md:px-6 bg-accent">
       <div className="flex h-16 items-center justify-between gap-4">
         {/* Left side */}
         <div className="w-max flex items-center gap-2">
