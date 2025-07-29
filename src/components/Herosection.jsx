@@ -17,7 +17,7 @@ const Herosection = () => {
                         <img src="/profile.jfif" alt="face" className='rounded-full w-[80px] h-[80px] md:w-[100px] md:h-[100px] border-2 bg-amber-400' />
                         <div className='overflow-hidden'>
                             <div className="border-b-2 border-gray-600 py-0">
-                                <WordRotate words={["Developer", "designer", "tech guy"]} className={'text-[60px] sm:text-[100px] md:text-[120px] '} />
+                                <WordRotate words={["Developer.", "Designer.", "tech guy."]} className={'text-[60px] sm:text-[100px] md:text-[120px] '} />
                             </div>
                         </div>
                     </div>
