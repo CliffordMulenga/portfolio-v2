@@ -8,7 +8,7 @@ const WhatICanDo = () => {
         <section id="about" className="about">
             <div className="container">
                 <div className="section-header">
-                    <span className="section-tag">What i can do</span>
+                    <span className="">What i can do</span>
                     <h2>I Don't Just Make Projects, I Build Solutions To Help Bussiness Grow</h2>
                     <p>Every great project starts with understanding the problem. Here's how I solve yours.</p>
                 </div>
