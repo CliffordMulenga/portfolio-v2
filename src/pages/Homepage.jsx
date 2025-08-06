@@ -13,7 +13,7 @@ const Homepage = () => {
         <SelectedWork/>
         <WhatICanDo/>
         <HomeServices/>
-        <Contact/>
+        {/* <Contact/> */}
     </main>
   )
 }
