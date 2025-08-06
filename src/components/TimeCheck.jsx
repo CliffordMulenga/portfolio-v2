@@ -8,7 +8,17 @@ const TimeCheck = () => {
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      setMyTime(now.toLocaleTimeString());
+
+    const options = {
+      timezone: 'America/New_York',
+      hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        hour12: true,
+    }
+    const formattedTime = new Intl.DateTimeFormat('en-US', options).format(now);
+      setMyTime(formattedTime);
+      // setMyTime(now.toLocaleTimeString());
     };
 
     updateTime();
@@ -26,7 +36,7 @@ const TimeCheck = () => {
   <div className="text-left">
     <h3 className="text-sm font-bold">Time Check</h3>
     <p className="text-[12px] sm:text-sm">My Time: {myTime}</p>
-    <p className="text-[12px] sm:text-sm">Your Time: {myTime}</p>
+    <p className="text-[12px] sm:text-sm">Time Zone: GMT+2</p>
   </div>
 </div>
 

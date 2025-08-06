@@ -22,7 +22,7 @@ const Herosection = () => {
                         </div>
                     </div>
                     <div className='w-[95%] text-center md:w-[50%] md:text-start'>
-                        <p className='text-sm text-gray-600'>I help ambitious businesses and entrepreneurs build powerful software solutions that drive growth,
+                        <p className='text-sm text-gray-600'> <span className='italic font-bold text-gray-700'>Hey 👋 I am Clifford Mulenga</span> and i help ambitious businesses and entrepreneurs build powerful software solutions that drive growth,
                             increase efficiency, and create competitive advantages in today's digital landscape.</p>
                         <p>
                             <span className='font-bold text-[12px] italic'>Based in Zambia</span>
