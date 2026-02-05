@@ -104,10 +104,24 @@ const ProjectDetails = ({ project }) => {
               </div>
               <div className="flex flex-wrap gap-3">
                 {project.links?.live ? (
-                  <a href={project.links.live} className="rounded-full hover:bg-[color:var(--accent)] px-6 py-2 text-sm font-semibold text-white bg-[color:var(--accent-strong)] hover:text-black">Live site</a>
+                  <a
+                    href={project.links.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-full hover:bg-[color:var(--accent)] px-6 py-2 text-sm font-semibold text-white bg-[color:var(--accent-strong)] hover:text-black"
+                  >
+                    Live site
+                  </a>
                 ) : null}
                 {project.links?.github ? (
-                  <a href={project.links.github} className="rounded-full border border-[color:var(--border)] px-6 py-2 text-sm font-semibold text-[color:var(--ink)] hover:border-[color:var(--accent-strong)] hover:text-[color:var(--accent-strong)]">GitHub</a>
+                  <a
+                    href={project.links.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-full border border-[color:var(--border)] px-6 py-2 text-sm font-semibold text-[color:var(--ink)] hover:border-[color:var(--accent-strong)] hover:text-[color:var(--accent-strong)]"
+                  >
+                    GitHub
+                  </a>
                 ) : null}
               </div>
             </div>
