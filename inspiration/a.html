@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeetha's Portfolio: Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            scroll-behavior: smooth;
+        }
+        .serif-italic {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+        .project-card-bg {
+            background-color: #F0F0F0;
+            border-radius: 12px;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .project-group:hover .project-card-bg {
+            transform: scale(1.02);
+        }
+        .project-image {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .project-group:hover .project-image {
+            transform: translateY(-8px);
+        }
+        .footer-social-link {
+            display: inline-flex;
+            align-items: center;
+            font-weight: 500;
+            color: #1a1a1a;
+            transition: opacity 0.2s;
+        }
+        .footer-social-link:hover {
+            opacity: 0.7;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tighter hover:opacity-70 transition-opacity">
+                <div class="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full font-serif italic text-xl">S</div>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="#work" class="hover:text-black transition-colors">Work</a>
+                <a href="#about" class="hover:text-black transition-colors">About</a>
+                <a href="#" class="hover:text-black transition-colors">Resume</a>
+            </div>
+            <button class="md:hidden p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 absolute w-full shadow-lg">
+            <div class="flex flex-col space-y-4 text-center font-medium">
+                <a href="#work" class="block py-2 text-gray-600 hover:text-black">Work</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-black">About</a>
+                <a href="#" class="block py-2 text-gray-600 hover:text-black">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-[90vh] flex flex-col justify-center items-center pt-32 pb-20 px-6 relative">
+        <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+            <div class="mb-8 relative w-[107px] h-[107px]">
+                <img src="https://static.wixstatic.com/media/4d00f5_f241c6d418f74aae90e751808637f9a1~mv2.gif" 
+                     alt="Sangeetha.gif" 
+                     class="w-full h-full object-cover rounded-full">
+            </div>
+            <h1 class="text-6xl md:text-[94px] font-bold mb-6 tracking-tight leading-none text-[#1A1B1C]">
+                designer.
+            </h1>
+            <p class="text-lg md:text-[18px] text-[#1A1B1C] leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
+                Sangeetha designs interfaces: the portals of connection that embark on digital journeys, seamlessly traversing the realms of possibility and interaction. Her work is fueled by passion, empathy, and simplicity.
+            </p>
+            <div class="mb-16">
+                <span class="text-base md:text-[16px] font-bold text-[#1A1B1C]">Interaction Designer @ Google</span>
+            </div>
+            <div class="animate-bounce mt-4 cursor-pointer" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'})">
+                <svg preserveAspectRatio="none" viewBox="49.453 49.5 101.096 100.999" height="30" width="30" xmlns="http://www.w3.org/2000/svg" class="fill-[#1A1B1C]">
+                    <g><path d="m149.328 102.828-46.497 46.498a3.982 3.982 0 0 1-.612.501c-.099.066-.206.111-.308.167-.126.069-.246.145-.38.2-.133.055-.271.086-.408.126-.113.034-.222.077-.339.101a3.977 3.977 0 0 1-1.566 0c-.117-.023-.225-.067-.339-.1-.137-.04-.275-.072-.408-.127-.133-.055-.253-.131-.379-.199-.103-.057-.211-.102-.309-.168a3.982 3.982 0 0 1-.612-.501l-46.497-46.498a4 4 0 1 1 5.656-5.656L96 136.843V53.5a4 4 0 0 1 8 0v83.343l39.672-39.671a4 4 0 1 1 5.656 5.656z"></path></g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Project 1: Google -->
+                <div class="project-group flex flex-col cursor-pointer">
+                    <div class="relative w-full aspect-[4/3] mb-6">
+                        <div class="project-card-bg absolute inset-0"></div>
+                        <img src="https://static.wixstatic.com/media/4d00f5_3bacd3d17c1d4b1a826523e471b164fb~mv2.png/v1/crop/x_44,y_0,w_670,h_519/fill/w_330,h_255,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Google%20(1).png" 
+                             alt="Google Project" 
+                             class="project-image relative z-10 w-4/5 h-4/5 object-contain mx-auto my-auto mt-10">
+                            
+                    </div>
+                    <div class="flex gap-2">
+                      <img src="https://static.wixstatic.com/media/4d00f5_682faa7521224d96a458d06f4ad60a99~mv2.png" alt="Google Logo" class="h-6 w-fit mb-4 object-contain">
+                    <p>2025</p>  
+                    </div>
+                    
+                    <h3 class="text-[24px] font-bold text-[#2B3340] leading-tight mb-2">
+                        Hardware Innovation Project - User Experience Design Internship
+                    </h3>
+                    <a href="#" class="text-[16px] font-bold text-[#2B3340] underline decoration-1 underline-offset-4 hover:opacity-70 transition-opacity">View Project</a>
+                </div>
+
+                <!-- Project 2: Glyde -->
+                <div class="project-group flex flex-col cursor-pointer">
+                    <div class="relative w-full aspect-[4/3] mb-6">
+                        <div class="project-card-bg absolute inset-0"></div>
+                        <img src="https://static.wixstatic.com/media/4d00f5_439f5364a7234852b623f4b3311fe440~mv2.png" 
+                             alt="Glyde Project" 
+                             class="project-image relative z-10 w-4/5 h-4/5 object-contain mx-auto my-auto mt-10">
+                    </div>
+                    <img src="https://static.wixstatic.com/media/4d00f5_476f1e52b50e4dc993ac03dae606c75b~mv2.png" alt="Quicko Logo" class="h-6 w-fit mb-4 object-contain">
+                    <h3 class="text-[24px] font-bold text-[#2B3340] leading-tight mb-2">
+                        Designing an MVP mobile experience to glyde through taxes.
+                    </h3>
+                    <a href="#" class="text-[16px] font-bold text-[#2B3340] underline decoration-1 underline-offset-4 hover:opacity-70 transition-opacity">View Project</a>
+                </div>
+
+                <!-- Project 3: Quicko Redesign -->
+                <div class="project-group flex flex-col cursor-pointer">
+                    <div class="relative w-full aspect-[4/3] mb-6">
+                        <div class="project-card-bg absolute inset-0"></div>
+                        <img src="https://static.wixstatic.com/media/4d00f5_fc97eb68cb6e43b7842b31030ce292ad~mv2.png" 
+                             alt="Quicko Project" 
+                             class="project-image relative z-10 w-4/5 h-4/5 object-contain mx-auto my-auto mt-10">
+                    </div>
+                    <img src="https://static.wixstatic.com/media/4d00f5_476f1e52b50e4dc993ac03dae606c75b~mv2.png" alt="Quicko Logo" class="h-6 w-fit mb-4 object-contain">
+                    <h3 class="text-[24px] font-bold text-[#2B3340] leading-tight mb-2">
+                        Simplifying Taxes for All: Deciphering User Needs and Triggering the Redesign Journey
+                    </h3>
+                    <a href="#" class="text-[16px] font-bold text-[#2B3340] underline decoration-1 underline-offset-4 hover:opacity-70 transition-opacity">View Project</a>
+                </div>
+
+                <!-- Project 4: Yocket -->
+                <div class="project-group flex flex-col">
+                    <div class="relative w-full aspect-[4/3] mb-6">
+                        <div class="project-card-bg absolute inset-0"></div>
+                        <img src="https://static.wixstatic.com/media/4d00f5_9f4dc06117ed40ae9726ed26801d943b~mv2.png" 
+                             alt="Yocket Project" 
+                             class="project-image relative z-10 w-4/5 h-4/5 object-contain mx-auto my-auto mt-10">
+                    </div>
+                    <img src="https://static.wixstatic.com/media/4d00f5_ff191d36f36e4059abfb7a15c29fb680~mv2.png" alt="Yocket Logo" class="h-6 w-fit mb-4 object-contain opacity-80">
+                    <h3 class="text-[24px] font-bold text-[#2B3340] leading-tight mb-2">
+                        Revitalizing User Engagement: A Case Study on Transforming Yocket's Feed 
+                    </h3>
+                    <span class="text-[16px] font-bold text-[#2B3340] underline decoration-1 underline-offset-4 opacity-60">Coming Soon</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-serif italic mb-12 text-gray-800">"What People have to say"</h2>
+            <div class="bg-gray-50 p-8 md:p-12 rounded-3xl relative">
+                <i data-lucide="quote" class="absolute top-8 left-8 w-8 h-8 text-gray-300 opacity-50"></i>
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 relative z-10 italic">
+                    "Sangeetha was a phenomenal intern and I would host her again if given the opportunity. She showed so much growth over this internship and has produced some stellar work that is so valuable to me and my team. She is thoughtful with her approach to breaking down complex problems and truly has the user's best interests at heart."
+                </p>
+                <div class="flex items-center justify-center space-x-4">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" 
+                         alt="Nicolas Pellegrino" 
+                         class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md">
+                    <div class="text-left">
+                        <h4 class="font-bold text-gray-900">Nicolas Pellegrino</h4>
+                        <p class="text-sm text-gray-500">Interaction Designer @Google</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                
+                <!-- Left side content -->
+                <div class="space-y-6">
+                    <p class="text-[18px] text-[#1A1B1C] font-medium leading-relaxed max-w-md">
+                        Thanks for reaching the bottom of this page. If you like what you see, let's connect and build something together!
+                    </p>
+                    
+                    <a href="#" class="block">
+                        <img src="https://static.wixstatic.com/media/4d00f5_f8c0a2eda82c43fd97781c118855a834~mv2.png" 
+                             alt="Logo" 
+                             class="h-14 object-contain">
+                    </a>
+
+                    <div class="pt-4">
+                        <p class="text-[18px] text-[#1A1B1C] font-medium mb-1">Alternatively, here's a fancy sheet of paper.</p>
+                        <a href="https://www.sangeethap.com/_files/ugd/4d00f5_008f3727234b4181b4d6fa6e67f53512.pdf" target="_blank" class="text-[18px] text-[#045184] font-medium underline underline-offset-4 decoration-1">Résumé</a>
+                    </div>
+                </div>
+
+                <!-- Right side links -->
+                <div class="flex flex-col md:items-end space-y-6 md:pt-4">
+                    <!-- Diagonal arrow graphic -->
+                    <div class="hidden md:block w-16 h-16 text-[#1a1a1a]">
+                        <svg viewBox="9 11.211 176.789 175.789" class="w-full h-full fill-current">
+                            <path d="M183.713 13.288c-2.769-2.77-7.378-2.768-10.145 0L23 163.734V60.045c0-3.915-3.085-7.088-7-7.088s-7 3.173-7 7.088v119.779c0 3.915 3.241 7.176 7.155 7.176H150.11c3.915 0 7.088-3.085 7.088-7s-3.173-7-7.088-7H34.288L183.713 23.443c2.768-2.768 2.768-7.388 0-10.155z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="flex flex-col md:items-end space-y-4">
+                        <a href="https://www.linkedin.com/in/sparthaa/" target="_blank" class="footer-social-link group">
+                            <span class="text-xl">Linkedin</span>
+                            <svg class="w-6 h-6 ml-2" viewBox="0 0 200 200">
+                                <path d="M137 133a4 4 0 0 1-4 4H67c-.263 0-.525-.027-.783-.079-.117-.023-.225-.067-.339-.1-.137-.04-.275-.072-.408-.127-.133-.055-.253-.131-.379-.199-.103-.057-.211-.102-.309-.168a4.023 4.023 0 0 1-1.109-1.109c-.065-.097-.109-.203-.165-.304-.07-.127-.146-.25-.202-.384-.055-.132-.086-.271-.126-.407-.033-.113-.077-.222-.101-.339A4.056 4.056 0 0 1 63 133V67a4 4 0 0 1 8 0v56.344l59.172-59.172a4 4 0 1 1 5.656 5.656L76.656 129H133a4 4 0 0 1 4 4z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/_sangeeethaaaa/" target="_blank" class="footer-social-link group">
+                            <span class="text-xl">Instagram</span>
+                            <svg class="w-6 h-6 ml-2" viewBox="0 0 200 200">
+                                <path d="M137 133a4 4 0 0 1-4 4H67c-.263 0-.525-.027-.783-.079-.117-.023-.225-.067-.339-.1-.137-.04-.275-.072-.408-.127-.133-.055-.253-.131-.379-.199-.103-.057-.211-.102-.309-.168a4.023 4.023 0 0 1-1.109-1.109c-.065-.097-.109-.203-.165-.304-.07-.127-.146-.25-.202-.384-.055-.132-.086-.271-.126-.407-.033-.113-.077-.222-.101-.339A4.056 4.056 0 0 1 63 133V67a4 4 0 0 1 8 0v56.344l59.172-59.172a4 4 0 1 1 5.656 5.656L76.656 129H133a4 4 0 0 1 4 4z"></path>
+                            </svg>
+                        </a>
+                        <a href="mailto:sangeethaparthasarathi24@gmail.com?subject=Let's work together!" class="footer-social-link group">
+                            <span class="text-xl">Email me</span>
+                            <svg class="w-6 h-6 ml-2" viewBox="0 0 200 200">
+                                <path d="M137 133a4 4 0 0 1-4 4H67c-.263 0-.525-.027-.783-.079-.117-.023-.225-.067-.339-.1-.137-.04-.275-.072-.408-.127-.133-.055-.253-.131-.379-.199-.103-.057-.211-.102-.309-.168a4.023 4.023 0 0 1-1.109-1.109c-.065-.097-.109-.203-.165-.304-.07-.127-.146-.25-.202-.384-.055-.132-.086-.271-.126-.407-.033-.113-.077-.222-.101-.339A4.056 4.056 0 0 1 63 133V67a4 4 0 0 1 8 0v56.344l59.172-59.172a4 4 0 1 1 5.656 5.656L76.656 129H133a4 4 0 0 1 4 4z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom copy -->
+            <div class="mt-20 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center opacity-40 text-xs">
+                <p>&copy; 2024 Sangeetha P. All rights reserved.</p>
+                <div class="w-6 h-6 bg-black text-white flex items-center justify-center rounded-full font-serif italic mt-4 md:mt-0">S</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function initIcons() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            } else {
+                setTimeout(initIcons, 100);
+            }
+        }
+        window.onload = initIcons;
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-sm', 'bg-white/95');
+                navbar.classList.remove('bg-white/90');
+            } else {
+                navbar.classList.remove('shadow-sm', 'bg-white/95');
+                navbar.classList.add('bg-white/90');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,577 @@
+[
+  {
+    "id": "fabric",
+    "title": "Fabric",
+    "client": "Fabric Studios",
+    "date": "2024-09-12",
+    "category": "Web Experience",
+    "tag": "Case Study",
+    "featured": false,
+    "summary": "A minimal fashion marketplace reimagined with a cinematic browsing flow and tactile micro-interactions.",
+    "role": [
+      "Product Strategy",
+      "UI/UX Design",
+      "Frontend Development"
+    ],
+    "stack": [
+      "React",
+      "GSAP",
+      "Tailwind",
+      "Lenis"
+    ],
+    "location": "Remote � Zambia",
+    "heroImage": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1800&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=Fabric",
+    "gallery": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "results": [
+      "37% lift in average session duration",
+      "28% increase in add-to-cart events",
+      "Streamlined checkout from 5 steps to 2"
+    ],
+    "links": {
+      "live": "https://example.com/fabric",
+      "github": "https://example.com/fabric-case-study"
+    },
+    "credits": [
+      {
+        "name": "Lena Park",
+        "role": "Brand Design"
+      },
+      {
+        "name": "Marco Diaz",
+        "role": "Product Photography"
+      }
+    ]
+  },
+  {
+    "id": "aurora",
+    "title": "Aurora Health",
+    "client": "Aurora Clinics",
+    "date": "2023-06-18",
+    "category": "Healthcare Platform",
+    "tag": "Product",
+    "featured": false,
+    "summary": "A patient-first booking platform that balances empathy with performance and clarity.",
+    "role": [
+      "Experience Design",
+      "Design System",
+      "Frontend Development"
+    ],
+    "stack": [
+      "React",
+      "Framer Motion",
+      "Shadcn/UI"
+    ],
+    "location": "Remote � Zambia",
+    "heroImage": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?q=80&w=1800&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=Aurora",
+    "gallery": [
+      "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "results": [
+      "Appointment bookings up 42%",
+      "Reduced support requests by 31%",
+      "New design system deployed in 3 weeks"
+    ],
+    "links": {
+      "live": "https://example.com/aurora",
+      "github": "https://example.com/aurora-case-study"
+    },
+    "credits": [
+      {
+        "name": "Amina Yusuf",
+        "role": "Content Strategy"
+      },
+      {
+        "name": "Ethan Cole",
+        "role": "UX Research"
+      }
+    ]
+  },
+  {
+    "id": "vista",
+    "title": "Vista Labs",
+    "client": "Vista AI",
+    "date": "2024-03-25",
+    "category": "AI Product Launch",
+    "tag": "Launch",
+    "featured": false,
+    "summary": "A launch experience built to translate complex AI into a calm, premium narrative.",
+    "role": [
+      "Brand Experience",
+      "Motion Design",
+      "Frontend Development"
+    ],
+    "stack": [
+      "React",
+      "GSAP",
+      "Tailwind"
+    ],
+    "location": "Remote � Zambia",
+    "heroImage": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1800&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=Vista",
+    "gallery": [
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "results": [
+      "Launch waitlist hit 12k signups",
+      "Pitch deck time-to-close cut by 50%",
+      "PR coverage across 6 outlets"
+    ],
+    "links": {
+      "live": "https://example.com/vista",
+      "github": "https://example.com/vista-case-study"
+    },
+    "credits": [
+      {
+        "name": "Sofia Grant",
+        "role": "Visual Design"
+      },
+      {
+        "name": "Noah Reed",
+        "role": "Motion Art Direction"
+      }
+    ]
+  },
+  {
+    "id": "nimbus",
+    "title": "Nimbus Commerce",
+    "client": "Nimbus Retail",
+    "date": "2022-10-08",
+    "category": "Ecommerce Refresh",
+    "tag": "Commerce",
+    "featured": false,
+    "summary": "A high-velocity storefront refresh focused on clarity, conversion, and a softer visual tone.",
+    "role": [
+      "Experience Design",
+      "Frontend Development"
+    ],
+    "stack": [
+      "React",
+      "Tailwind",
+      "Stripe"
+    ],
+    "location": "Remote � Zambia",
+    "heroImage": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1800&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=Nimbus",
+    "gallery": [
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "results": [
+      "Checkout completion up 21%",
+      "Reduced bounce rate by 18%",
+      "Improved mobile conversion by 26%"
+    ],
+    "links": {
+      "live": "https://example.com/nimbus",
+      "github": "https://example.com/nimbus-case-study"
+    },
+    "credits": [
+      {
+        "name": "Priya Shah",
+        "role": "Ecommerce Strategy"
+      },
+      {
+        "name": "Miles Turner",
+        "role": "Conversion Copywriting"
+      }
+    ]
+  },
+
+
+
+  {
+    "id": "horizon",
+    "title": "Horizon Logistics",
+    "client": "Horizon Fleet",
+    "date": "2023-04-14",
+    "category": "SaaS Platform",
+    "tag": "Dashboard",
+    "featured": false,
+    "summary": "A logistics dashboard that simplifies complex supply chain operations into clean, actionable insights.",
+    "role": [
+      "Product Design",
+      "UX Research"
+    ],
+    "stack": [
+      "React",
+      "D3.js",
+      "Tailwind"
+    ],
+    "location": "Remote � Zambia",
+    "heroImage": "https://plus.unsplash.com/premium_photo-1682144324433-ae1ee89a0238?q=80&w=1200&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=Horizon",
+    "gallery": [
+      "https://images.unsplash.com/photo-1641290451977-a427586acf49?q=80&w=1200&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1661899574771-7489680d5e13?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1700716465891-9e5e9f501d7d?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://plus.unsplash.com/premium_photo-1661589175916-4b37023f75db?q=80&w=1200&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1661512295141-6699065d1bde?q=80&w=1200&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1661558480327-5fd513e34046?q=80&w=1200&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1661526667495-4164a3f7c1a9?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "results": [
+      "Report generation time reduced by 40%",
+      "Operational visibility improved across 6 regions",
+      "Team onboarding time cut in half"
+    ],
+    "links": {
+      "live": "https://example.com/horizon",
+      "github": "https://example.com/horizon-case-study"
+    },
+    "credits": [
+      {
+        "name": "Chen Liu",
+        "role": "Data Visualization"
+      },
+      {
+        "name": "Isla Moreno",
+        "role": "Research Ops"
+      }
+    ]
+  },
+
+  {
+    "id": "results-system",
+    "title": "Results Management System",
+    "client": "Educational Institution",
+    "date": "2026-01-01",
+    "category": "Education System",
+    "tag": "EdTech",
+    "featured": true,
+    "summary": "A digital results management system that replaces paper-based workflows with a secure, searchable, and efficient way to record and track student academic performance.",
+    "role": [
+      "System Design",
+      "Frontend Development",
+      "Backend Integration"
+    ],
+    "stack": [
+      "React",
+      "Node.js",
+      "MySQL",
+      "Tailwind CSS"
+    ],
+    "location": "Remote – Zambia",
+    "heroImage": "https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1800&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=Results",
+    "gallery": [
+      "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/home-desktop.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/main-dashboard-desktop.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/results-center.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/admin-rules.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/add-pupils.png"
+    ],
+    "results": [
+      "Eliminated paper-based result processing",
+      "Improved accuracy and record retrieval",
+      "Reduced result compilation time by over 50%"
+    ],
+    "links": {
+      "live": "",
+      "github": "https://github.com/CliffordMulenga/school-results-management-system"
+    },
+    "credits": []
+  },
+  {
+    "id": "student-management-system",
+    "title": "Student Management System",
+    "client": "Private School",
+    "date": "2026-01-20",
+    "category": "Education Platform",
+    "tag": "School System",
+    "featured": true,
+    "summary": "A comprehensive school management platform that centralizes student records, staff management, and online examinations into one streamlined digital system.",
+    "role": [
+      "Product Design",
+      "Full-Stack Development"
+    ],
+    "stack": [
+      "React",
+      "PHP",
+      "MySQL",
+      "Bootstrap"
+    ],
+    "location": "Zambia",
+    "heroImage": "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1800&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=SMS",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1584697964192-7f37a6e2c1cf?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/homepage.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/login.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Admin-dashboard.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/student%20takes%20exam.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Teacher%20adds%20questions.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/student%20exam%20page.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/student%20dashboard.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/view%20results.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Add%20student.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Add%20exam.png"
+    ],
+    "results": [
+      "Centralized student and academic records",
+      "Enabled secure online exams",
+      "Improved administrative efficiency"
+    ],
+    "links": {
+      "live": "",
+      "github": "https://github.com/CliffordMulenga/student-management-system"
+    },
+    "credits": []
+  },
+  {
+    "id": "passport-portal",
+    "title": "Passport Application Portal",
+    "client": "Public Sector Concept",
+    "date": "2025-12-28",
+    "category": "Government Service",
+    "tag": "Civic Tech",
+    "featured": false,
+    "summary": "A conceptual passport application portal designed to simplify and digitize the passport application process for citizens in Zambia.",
+    "role": [
+      "UI/UX Design",
+      "Frontend Development"
+    ],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "location": "Zambia",
+    "heroImage": "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?q=80&w=1800&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=Passport",
+    "gallery": [
+      "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1581092334648-4d3e7f1c3b38?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/homepage.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Admin-dashboard.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Application-tracking.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Applicant-Dashboard.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/login.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Admin-Application-view.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Application-flow.png"
+    ],
+    "results": [
+      "Improved accessibility to government services",
+      "Reduced application complexity",
+      "Clearer user journey for applicants"
+    ],
+    "links": {
+      "live": "",
+      "github": "https://github.com/CliffordMulenga/online-passport-application-portal"
+    },
+    "credits": []
+  },
+  {
+    "id": "jandb-services",
+    "title": "J & B Services Limited",
+    "client": "J & B Services Limited",
+    "date": "2025-08-09",
+    "category": "Corporate Website",
+    "tag": "Business",
+    "featured": true,
+    "summary": "A corporate website for a professional services company offering CV writing, graphic design, and LinkedIn optimization services.",
+    "role": [
+      "Web Design",
+      "Frontend Development"
+    ],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "location": "Zambia",
+    "heroImage": "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1800&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=J%26B",
+    "gallery": [
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "results": [
+      "Improved brand credibility",
+      "Clear service positioning",
+      "Increased client inquiries"
+    ],
+    "links": {
+      "live": "https://www.jandbserviceslimited.com/",
+      "github": ""
+    },
+    "credits": []
+  },
+  {
+    "id": "chef-academy",
+    "title": "Chef Academy of London Website Redesign",
+    "client": "Chef Academy of London",
+    "date": "2025-01-16",
+    "category": "Website Redesign",
+    "tag": "Education",
+    "featured": true,
+    "summary": "A modern redesign of the Chef Academy of London website focused on clarity, visual appeal, and improved student engagement.",
+    "role": [
+      "UI/UX Design",
+      "Frontend Development"
+    ],
+    "stack": [
+      "React",
+      "Tailwind CSS"
+    ],
+    "location": "Remote – UK",
+    "heroImage": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=1800&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=Chef",
+    "gallery": [
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1556912167-f556f1f39df1?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1543352634-5a4b24e6b8f3?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1556912167-f556f1f39df1?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1543352634-5a4b24e6b8f3?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "results": [
+      "Modernized brand presence",
+      "Improved navigation and readability",
+      "Enhanced student enrollment experience"
+    ],
+    "links": {
+      "live": "",
+      "github": ""
+    },
+    "credits": []
+  },
+  {
+    "id": "luxury-limo",
+    "title": "Luxury Limo Hire Landing Page",
+    "client": "Luxury Limo Hire",
+    "date": "2024-03-11",
+    "category": "Landing Page",
+    "tag": "Luxury",
+    "featured": false,
+    "summary": "A high-end landing page designed to showcase luxury limousine services with a focus on elegance, trust, and conversions.",
+    "role": [
+      "UI Design",
+      "Frontend Development"
+    ],
+    "stack": [
+      "HTML",
+      "Tailwind CSS"
+    ],
+    "location": "Remote",
+    "heroImage": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1800&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=Limo",
+    "gallery": [
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1511910849309-0dffb8785146?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1511910849309-0dffb8785146?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "results": [
+      "Stronger premium brand perception",
+      "Improved booking intent",
+      "High visual impact design"
+    ],
+    "links": {
+      "live": "",
+      "github": ""
+    },
+    "credits": []
+  },
+  {
+    "id": "serenity",
+    "title": "Serenity Wellness Website",
+    "client": "Serenity Spa",
+    "date": "2024-09-23",
+    "category": "Wellness Website",
+    "tag": "Health",
+    "featured": false,
+    "summary": "A calming and minimal website for a wellness and spa brand, designed to promote relaxation and easy service discovery.",
+    "role": [
+      "UI/UX Design",
+      "Frontend Development"
+    ],
+    "stack": [
+      "React",
+      "Tailwind CSS"
+    ],
+    "location": "Remote",
+    "heroImage": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1800&auto=format&fit=crop",
+    "logo": "https://dummyimage.com/120x40/111/fff&text=Serenity",
+    "gallery": [
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "snapshots": [
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop"
+    ],
+    "results": [
+      "Improved brand calmness and clarity",
+      "Enhanced user engagement",
+      "Clear service presentation"
+    ],
+    "links": {
+      "live": "",
+      "github": ""
+    },
+    "credits": []
+  }
+
+
+
+
+]

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twice — Dennis Snellenberg</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'NeueMontreal';
+            src: url('https://fonts.cdnfonts.com/css/neue-montreal');
+        }
+
+        :root {
+            --bg-color: #f1f1f1;
+            --dark: #1c1d20;
+            --accent: #C0CAC9;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--dark);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- LOADING SCREEN --- */
+        .loading-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 10000;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loading-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .loading-words {
+            color: white;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .loading-words h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loading-words h2 .dot {
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .rounded-div-wrap {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 10vh;
+            overflow: hidden;
+        }
+        .rounded-div-wrap.bottom { bottom: 0; transform: translateY(100%); }
+        .rounded-div-wrap.top { top: 0; transform: translateY(-100%); }
+
+        .rounded-div {
+            width: 150%;
+            height: 750%;
+            position: absolute;
+            left: 50%;
+            background: var(--dark);
+            border-radius: 50%;
+            transform: translate(-50%, -86.666%);
+        }
+
+        .bottom .rounded-div { transform: translate(-50%, -13.333%); }
+
+        /* --- UI COMPONENTS --- */
+        .btn-hamburger {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            z-index: 5000;
+            transform: scale(0); /* Hidden by default */
+            opacity: 0;
+        }
+
+        .btn-click {
+            width: 70px;
+            height: 70px;
+            background: var(--dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        .btn-bars {
+            width: 25px;
+            height: 2px;
+            background: white;
+            position: relative;
+        }
+
+        .btn-bars::before, .btn-bars::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: white;
+            left: 0;
+        }
+        .btn-bars::before { top: -6px; }
+        .btn-bars::after { bottom: -6px; }
+
+        .nav-bar {
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        h1 { font-size: clamp(5rem, 15vw, 12rem); line-height: 0.8; letter-spacing: -0.03em; }
+
+        .stripe { height: 1px; background: rgba(0,0,0,0.1); width: 100%; margin: 20px 0; }
+
+        /* --- CASE SECTIONS --- */
+        .case-header { height: 110vh; display: flex; align-items: flex-end; padding-bottom: 15vh; }
+        
+        .single-image {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background: #eee;
+        }
+
+        .device-mbp16lower {
+            padding: 100px 10%;
+            background-color: var(--accent);
+        }
+
+        .device {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 50px 100px rgba(0,0,0,0.1);
+        }
+
+        .footer-rounded-div {
+            height: 100px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            margin-top: -50px;
+            z-index: 10;
+        }
+
+        .footer-rounded-div .rounded-div {
+            background-color: var(--bg-color);
+            transform: translate(-50%, -10%);
+        }
+
+        .footer-wrap {
+            background: var(--dark);
+            color: white;
+            padding: 150px 50px;
+            min-height: 100vh;
+        }
+
+        .next-case-btn h2 {
+            font-size: clamp(3rem, 8vw, 8rem);
+            transition: opacity 0.3s;
+        }
+
+        .next-case-btn:hover h2 { opacity: 0.5; }
+
+        @media (max-width: 768px) {
+            .nav-bar .links-wrap { display: none; }
+            .btn-hamburger { transform: scale(1) !important; opacity: 1 !important; }
+        }
+
+    </style>
+</head>
+<body data-barba="wrapper">
+
+    <!-- Loading Screen -->
+    <div class="loading-container">
+        <div class="loading-screen">
+            <div class="rounded-div-wrap top"><div class="rounded-div"></div></div>
+            <div class="loading-words">
+                <h2 class="home-active">Hello<div class="dot"></div></h2>
+                <h2 class="home-active">Bonjour<div class="dot"></div></h2>
+                <h2 class="home-active">स्वागत हे<div class="dot"></div></h2>
+                <h2 class="home-active">Ciao<div class="dot"></div></h2>
+                <h2 class="home-active">おい<div class="dot"></div></h2>
+                <h2 class="home-active">Guten tag<div class="dot"></div></h2>
+                <h2 class="home-active-last">TWICE<div class="dot"></div></h2>
+            </div>
+            <div class="rounded-div-wrap bottom"><div class="rounded-div"></div></div>
+        </div>
+    </div>
+
+    <!-- Floating Hamburger Button -->
+    <div class="btn-hamburger" id="floating-menu">
+        <div class="btn-click magnetic" data-strength="50">
+            <div class="btn-bars"></div>
+        </div>
+    </div>
+
+    <main class="main" id="work-single" data-barba="container">
+        
+        <!-- Header Section -->
+        <header class="section default-header case-header px-6 md:px-12" id="main-header">
+            <div class="nav-bar">
+                <div class="credits-top font-medium">© Code by Dennis</div>
+                <ul class="links-wrap flex gap-8 text-sm uppercase tracking-widest">
+                    <li><a href="#" class="magnetic" data-strength="20">Work</a></li>
+                    <li><a href="#" class="magnetic" data-strength="20">About</a></li>
+                    <li><a href="#" class="magnetic" data-strength="20">Contact</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <h1 class="reveal-text">TWICE</h1>
+            </div>
+        </header>
+
+        <!-- Intro Meta -->
+        <section class="section case-intro py-32 px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-20">
+                <div class="flex-col">
+                    <h5 class="text-xs uppercase text-gray-400 mb-4">Role / Services</h5>
+                    <div class="stripe"></div>
+                    <p class="text-lg">Interaction & Development</p>
+                </div>
+                <div class="flex-col">
+                    <h5 class="text-xs uppercase text-gray-400 mb-4">Credits</h5>
+                    <div class="stripe"></div>
+                    <p class="text-lg">Design: Dylan Brouwer</p>
+                </div>
+                <div class="flex-col">
+                    <h5 class="text-xs uppercase text-gray-400 mb-4">Location & Year</h5>
+                    <div class="stripe"></div>
+                    <p class="text-lg">Spain © 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Image -->
+        <section class="section case-intro-image pb-32 px-6 md:px-12">
+            <div class="single-image rounded-3xl h-[60vh] md:h-[80vh]">
+                <img class="w-full h-full object-cover scale-110" id="main-hero-img" src="https://dennissnellenberg.com/media/pages/work/twice/56dc0c6ce1-1710405711/dsc7458.jpg" alt="Twice">
+            </div>
+        </section>
+
+        <!-- Device Section (Video) -->
+        <section class="section single-block block-device" style="background-color: var(--accent);">
+            <div class="device-mbp16lower">
+                <div class="device">
+                    <div class="single-image">
+                        <video class="w-full h-auto" src="https://dennissnellenberg.com/media/pages/work/twice/2a06f31598-1710406342/screen-rec-home-2.mov" autoplay loop muted playsinline></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Devices Grid -->
+        <section class="section py-32 px-6 md:px-12" style="background-color: var(--accent);">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="device mb-12" data-speed="1.2">
+                    <img class="w-full" src="https://dennissnellenberg.com/media/pages/work/twice/076ed24f45-1710412700/screen-mobile-1.jpg" alt="mobile 1">
+                </div>
+                <div class="device mt-0 md:mt-20">
+                    <img class="w-full" src="https://dennissnellenberg.com/media/pages/work/twice/6d3469f364-1710412710/screen-mobile-2.jpg" alt="mobile 2">
+                </div>
+                <div class="device mb-12" data-speed="0.8">
+                    <img class="w-full" src="https://dennissnellenberg.com/media/pages/work/twice/4482f6c357-1710412713/screen-mobile-3.jpg" alt="mobile 3">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Rounded Transition -->
+        <div class="footer-rounded-div">
+            <div class="rounded-div-wrap bottom"><div class="rounded-div"></div></div>
+        </div>
+
+        <!-- Footer Case Wrap -->
+        <div class="footer-wrap">
+            <div class="container mx-auto">
+                <a href="#" class="next-case-btn block text-center py-20">
+                    <p class="uppercase tracking-widest text-gray-400 mb-8">Next Case</p>
+                    <h2 class="font-light">The Damai</h2>
+                </a>
+                <div class="stripe bg-gray-700 my-20"></div>
+                <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+                    <div>
+                        <h5 class="text-gray-500 uppercase text-xs mb-2">Version</h5>
+                        <p>2024 © Edition</p>
+                    </div>
+                    <div class="flex gap-10">
+                        <a href="#" class="magnetic" data-strength="20">Instagram</a>
+                        <a href="#" class="magnetic" data-strength="20">LinkedIn</a>
+                        <a href="#" class="magnetic" data-strength="20">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // 1. Initial Loading Sequence
+        function initLoader() {
+            const words = document.querySelectorAll(".loading-words h2");
+            let tl = gsap.timeline();
+
+            tl.set(".loading-screen", { top: "0%" });
+            tl.set(words, { display: "none" });
+
+            words.forEach((word, i) => {
+                tl.to(word, {
+                    display: "flex",
+                    duration: 0.15,
+                    onStart: () => {
+                        if(i > 0) words[i-1].style.display = "none";
+                    }
+                });
+            });
+
+            tl.to(".loading-screen", {
+                top: "-100%",
+                duration: 1,
+                ease: "power4.inOut",
+                delay: 0.2
+            });
+
+            tl.to(".rounded-div-wrap.bottom", {
+                height: "0vh",
+                duration: 1,
+                ease: "power4.inOut"
+            }, "-=1");
+
+            tl.from(".reveal-text", {
+                y: 200,
+                duration: 1,
+                ease: "power4.out"
+            }, "-=0.5");
+        }
+
+        // 2. Magnetic Buttons
+        function initMagnets() {
+            const magnets = document.querySelectorAll('.magnetic');
+            magnets.forEach((mag) => {
+                const strength = mag.dataset.strength || 40;
+                mag.addEventListener('mousemove', (e) => {
+                    const rect = mag.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    gsap.to(mag, {
+                        x: x * (strength / 100),
+                        y: y * (strength / 100),
+                        duration: 0.4,
+                        ease: "power2.out"
+                    });
+                });
+                mag.addEventListener('mouseleave', () => {
+                    gsap.to(mag, { x: 0, y: 0, duration: 1, ease: "elastic.out(1, 0.3)" });
+                });
+            });
+        }
+
+        // 3. Floating Menu Trigger Logic
+        function initMenuTrigger() {
+            // Only hide/show if on desktop (as defined by CSS media query)
+            if (window.innerWidth > 768) {
+                ScrollTrigger.create({
+                    trigger: "#main-header",
+                    start: "bottom 10%",
+                    onEnter: () => {
+                        gsap.to("#floating-menu", { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.7)" });
+                    },
+                    onLeaveBack: () => {
+                        gsap.to("#floating-menu", { scale: 0, opacity: 0, duration: 0.4, ease: "back.in(1.7)" });
+                    }
+                });
+            }
+        }
+
+        // 4. Parallax & Smooth Effects
+        function initParallax() {
+            gsap.to("#main-hero-img", {
+                yPercent: 20,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".case-intro-image",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true
+                }
+            });
+
+            gsap.to(".footer-rounded-div .rounded-div", {
+                height: "0%",
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".footer-rounded-div",
+                    start: "top bottom",
+                    end: "top top",
+                    scrub: true
+                }
+            });
+
+            document.querySelectorAll('[data-speed]').forEach(el => {
+                const speed = el.getAttribute('data-speed');
+                gsap.to(el, {
+                    y: -60 * parseFloat(speed),
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top bottom",
+                        scrub: true
+                    }
+                });
+            });
+        }
+
+        // Execution
+        window.onload = () => {
+            initLoader();
+            initMagnets();
+            initMenuTrigger();
+            initParallax();
+        };
+
+        // Re-init menu trigger on resize to handle mobile/desktop switch
+        window.addEventListener('resize', initMenuTrigger);
+
+    </script>
+</body>
+</html>

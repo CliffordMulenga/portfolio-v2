@@ -1,58 +1,74 @@
-import React from 'react'
 import developmentIcon from '/developmentIcon.svg'
 import designIcon from '/designIcon.svg'
 import SectionHeading from './ui/sectionHeading'
+import Reveal from './ui/Reveal'
 
 const WhatICanDo = () => {
     return (
         // <!-- What i can Do Section -->
-        <section className="flex justify-center bg-white py-8">
-            <div className="w-[90%] md:w-[80%] flex flex-col gap-8">
-                <div className=" flex flex-col text-center gap-2 md:gap-2 md:text-center">
-                    <h2 className='text-2xl md:text-6xl font-bold'>I Don't Just Make Projects, I Build Solutions To Help Bussiness Grow</h2>
-                    <p className='font-body font-light text-sm md:text-[1rem]'>Every great project starts with understanding the problem. Here's how I solve yours.</p>
+        <section id="services" className="flex justify-center py-12 sm:py-16 scroll-mt-24">
+            <div className="w-full max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
+                <div className="flex flex-col text-center gap-3">
+                    
+                    <Reveal>
+                        <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[color:var(--ink)]" data-scrub-headline>I don't just make projects, I build solutions that help businesses grow</h2>
+                    </Reveal>
+                    <Reveal>
+                        <p className="font-body font-light text-sm sm:text-base text-[color:var(--ink-muted)]">Every great project starts with understanding the problem. Here's how I solve yours.</p>
+                    </Reveal>
                 </div>
 
-                <div className="flex flex-col justify-center items-center gap-8">
-                    <div className="w-full md:w-[70%] flex flex-col gap-4">
-                        <SectionHeading title={'What i can do'}/>
-                        <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-                            <div className="w-[80%] md:w-[50%] flex flex-col justify-center text-center items-center sm:items-start sm:text-start">
-                                <div className=""><img src={designIcon} alt="design-icon" /></div>
-                                <h4 className='text-xl'>Design</h4>
-                                <p className='text-sm'>Designing interfaces that are intuitive, efficient and enjoyable to use</p>
-                            </div>
-                            <div className="w-[80%] md:w-[50%] flex flex-col justify-center text-center  items-center sm:items-start sm:text-start">
-                                <div className=""><img src={developmentIcon} alt="development-icon" /></div>
-                                <h4 className='text-xl'>Development</h4>
-                                <p className='text-sm'>Bringing  your vision into life with the latest technology and design trends</p>
-                            </div>
+                <div className="grid gap-10 lg:grid-cols-[1fr_.9fr] items-start">
+                    <div className="flex flex-col gap-4">
+                        <SectionHeading title={'What I can do'} />
+                        <div className="grid gap-4 sm:grid-cols-2">
+                            <Reveal>
+                                <div className="card-surface rounded-2xl p-5 flex flex-col gap-3 text-center sm:text-left items-center sm:items-start">
+                                    <img src={designIcon} alt="design-icon" className="h-12 w-12" />
+                                    <h4 className="text-xl font-semibold text-[color:var(--ink)]">Design</h4>
+                                    <p className="text-sm text-[color:var(--ink-muted)]">Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
+                                </div>
+                            </Reveal>
+                            <Reveal>
+                                <div className="card-surface rounded-2xl p-5 flex flex-col gap-3 text-center sm:text-left items-center sm:items-start">
+                                    <img src={developmentIcon} alt="development-icon" className="h-12 w-12" />
+                                    <h4 className="text-xl font-semibold text-[color:var(--ink)]">Development</h4>
+                                    <p className="text-sm text-[color:var(--ink-muted)]">Bringing your vision to life with modern, scalable technology.</p>
+                                </div>
+                            </Reveal>
                         </div>
                     </div>
-                    <div className="w-full md:w-[70%] flex flex-col gap-4">
-                        <SectionHeading title={'My Approach'} />
-                        <div className="flex flex-col gap-4 items-center">
-                            <div className="w-[80%] md:w-full flex flex-col gap-2 ">
-                                <div className="font-body text-2xl font-light text-gray-600">01</div>
-                                <div>
-                                    <h4 className='text-xl'>Listen & Understand</h4>
-                                    <p className='text-sm'>I dive deep into your business goals, challenges, and vision before writing a single line of code.</p>
+
+                    <div className="flex flex-col gap-4">
+                        <SectionHeading title={'My approach'} />
+                        <div className="flex flex-col gap-5">
+                            <Reveal>
+                                <div className="card-surface rounded-2xl p-5 flex flex-col gap-3">
+                                    <div className="font-body text-sm uppercase tracking-[0.3em] text-[color:var(--ink-soft)]">01</div>
+                                    <div>
+                                        <h4 className="text-xl font-semibold text-[color:var(--ink)]">Listen & Understand</h4>
+                                        <p className="text-sm text-[color:var(--ink-muted)]">I dive deep into your business goals, challenges, and vision before writing a single line of code.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="w-[80%] md:w-full flex flex-col gap-4">
-                                <div className="font-body text-2xl font-light text-gray-600">02</div>
-                                <div>
-                                    <h4 className='text-xl'>Design & Plan</h4>
-                                    <p className='text-sm'>Strategic planning and user-centered design ensure your solution works perfectly for your audience.</p>
+                            </Reveal>
+                            <Reveal delay={0.05}>
+                                <div className="card-surface rounded-2xl p-5 flex flex-col gap-3">
+                                    <div className="font-body text-sm uppercase tracking-[0.3em] text-[color:var(--ink-soft)]">02</div>
+                                    <div>
+                                        <h4 className="text-xl font-semibold text-[color:var(--ink)]">Design & Plan</h4>
+                                        <p className="text-sm text-[color:var(--ink-muted)]">Strategic planning and user-centered design ensure your solution works perfectly for your audience.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="w-[80%] md:w-full flex flex-col gap-4">
-                                <div className="font-body text-2xl font-light text-gray-600">03</div>
-                                <div className="step-content">
-                                    <h4 className='text-xl'>Build & Iterate</h4>
-                                    <p className='text-sm'>Agile development with regular check-ins keeps you involved and ensures we're always on track.</p>
+                            </Reveal>
+                            <Reveal delay={0.1}>
+                                <div className="card-surface rounded-2xl p-5 flex flex-col gap-3">
+                                    <div className="font-body text-sm uppercase tracking-[0.3em] text-[color:var(--ink-soft)]">03</div>
+                                    <div className="step-content">
+                                        <h4 className="text-xl font-semibold text-[color:var(--ink)]">Build & Iterate</h4>
+                                        <p className="text-sm text-[color:var(--ink-muted)]">Agile development with regular check-ins keeps you involved and ensures we're always on track.</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </Reveal>
                         </div>
                     </div>
                 </div>

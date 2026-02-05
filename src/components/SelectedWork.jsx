@@ -1,31 +1,42 @@
-import React from 'react'
 import SectionHeading from './ui/sectionHeading'
 import ProjectCard from './ui/ProjectCard'
+import projects from '../data/projects.json'
 import { Link } from 'react-router-dom'
 
 const SelectedWork = () => {
+    const featuredProjects = projects
+        .filter((project) => project.featured)
+        .sort((a, b) => {
+            const dateA = a.date ? new Date(a.date).getTime() : 0
+            const dateB = b.date ? new Date(b.date).getTime() : 0
+            return dateB - dateA
+        })
+        .slice(0, 4);
+
     return (
-        <section className='flex justify-center'>
-            <div className='w-[90%] md:w-[80%] flex flex-col gap-4'>
-                <div>
-                    <SectionHeading title={'Selected work'} />
-                </div>
-
-                <div className='grid md:grid-cols-2 gap-8'>
-                    <ProjectCard />
-                    <ProjectCard />
-                </div>
-
-                <div className="p-8 bg-gray-300 rounded-lg flex flex-col items-center justify-center gap-2 font-body my-[5rem]">
-                    <p className='text-2xl font-medium font-heading text-center'>Want to see more projects or discuss how I can help with yours?</p>
-                    <div className="w-[80%] flex gap-4 flex-col items-center justify-center text-center sm:flex-row">
-                        <Link to="#contact" className="transition py-2 px-8 rounded-md bg-gray-900 text-gray-50 hover:bg-transparent hover:text-gray-900 hover:border hover:border-gray-400 w-full sm:w-max">Let's Talk</Link>
-                        <Link to="#contact" className="transition py-2 px-8 rounded-md border text-gray-900 bg-transparent border-gray-400  hover:bg-gray-900  hover:border-none hover:text-gray-50 w-full sm:w-max">More Projects</Link>
+        <section id="work" className="flex justify-center py-16 scroll-mt-24">
+            <div className="w-full max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
+                <div className="flex items-end justify-between gap-6 flex-wrap">
+                    <div>
+                        <SectionHeading title={'Selected work'} />
+                        <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-heading text-[color:var(--ink)]" data-scrub-headline>
+                            A curated collection of product and brand experiences.
+                        </h2>
                     </div>
                 </div>
+
+                <div className="grid gap-8 md:grid-cols-2">
+                    {featuredProjects.map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
+                </div>
+
+                <div className="flex justify-center sm:justify-end">
+                    <Link to="/work" className="text-sm font-semibold text-[color:var(--ink)] underline decoration-1 underline-offset-4 hover:text-[color:var(--accent-strong)]">
+                        View all work
+                    </Link>
+                </div>
             </div>
-
-
         </section>
     )
 }

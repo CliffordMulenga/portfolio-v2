@@ -1,38 +1,41 @@
-import React from 'react'
 import { WordRotate } from './magicui/word-rotate'
-import TimeCheck from './TimeCheck'
+import Reveal from './ui/Reveal'
 
 const Herosection = () => {
-
     return (
-        <section className='relative h-screen w-full flex justify-center items-center'>
-            {/* Timers */}
-            <div className=''>
-                <TimeCheck />
-            </div>
+        <section id="home" className="relative overflow-hidden">
+            <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-[color:var(--accent-soft)] blur-3xl opacity-70" />
+            <div className="absolute -right-24 top-24 h-80 w-80 rounded-full bg-[#F3D7A6] blur-3xl opacity-60" />
 
-            <div className='w-[95%] md:w-[80%] h-[50%] flex items-end'>
-                <div className='flex flex-col items-center md:items-start gap-4'>
-                    <div className='flex gap-4 sm:gap-8 items-center'>
-                        <img src="/profile.jfif" alt="face" className='rounded-full w-[80px] h-[80px] md:w-[100px] md:h-[100px] border-2 bg-amber-400' />
-                        <div className='overflow-hidden'>
-                            <div className="border-b-2 border-gray-600 py-0">
-                                <WordRotate words={["Developer.", "Designer.", "tech guy."]} className={'text-[60px] sm:text-[100px] md:text-[120px] '} />
-                            </div>
+            <div className="mx-auto flex min-h-[90vh] w-full max-w-5xl flex-col items-center justify-center gap-8 px-4 pb-20 pt-28 text-center sm:px-6 lg:px-8">
+                <Reveal>
+                    <div className="relative h-[110px] w-[110px] rounded-full border border-[color:var(--border)] bg-white shadow-[var(--shadow-soft)]">
+                        <img src="/profile.jfif" alt="Clifford Mulenga portrait" className="h-full w-full rounded-full object-cover" />
+                    </div>
+                </Reveal>
+
+                    <div className="overflow-hidden">
+                        <div className="pb-2" >
+                            <WordRotate words={["designer.", "developer."]} className="text-[56px] leading-[0.9] text-[color:var(--ink)] sm:text-[88px] md:text-[110px]" />
                         </div>
                     </div>
-                    <div className='w-[95%] text-center md:w-[50%] md:text-start'>
-                        <p className='text-sm text-gray-600'> <span className='italic font-bold text-gray-700'>Hey 👋 I am Clifford Mulenga</span> and i help ambitious businesses and entrepreneurs build powerful software solutions that drive growth,
-                            increase efficiency, and create competitive advantages in today's digital landscape.</p>
-                        <p>
-                            <span className='font-bold text-[12px] italic'>Based in Zambia</span>
-                            <span className='font-light text-[12px] text-gray-400'> | </span>
-                            <span className='font-bold text-[12px] italic'>Avaliable for work</span>
-                        </p>
-                    </div>
-                </div>
+
+                <Reveal>
+                    <p className="max-w-3xl text-base sm:text-lg text-[color:var(--ink-muted)]">
+                        I design calm, minimalist digital experiences that feel premium and work effortlessly. Based in Zambia, collaborating globally with ambitious teams.
+                    </p>
+                </Reveal>
+
+                <Reveal>
+                    <span className="text-sm font-semibold text-[color:var(--ink)]">Product Designer + Frontend Developer</span>
+                </Reveal>
+
+                <Reveal>
+                    <a href="#work" className="mt-4 inline-flex h-10 w-10 items-center justify-center rounded-full border border-[color:var(--border)] text-[color:var(--ink)] transition hover:border-[color:var(--accent-strong)] hover:text-[color:var(--accent-strong)]">
+                        ↓
+                    </a>
+                </Reveal>
             </div>
-            
         </section>
     )
 }

@@ -1,66 +1,63 @@
 import { CircleCheck, ShieldCheck, Zap } from 'lucide-react'
-import React from 'react'
+import Reveal from './ui/Reveal'
 
 const Contact = () => {
     return (
         // < !--Contact Section-- >
 
-        <section className="flex justify-center">
-            <div className="w-[90%] md:w-[80%] flex flex-col items-center gap-8">
+        <section id="contact" className="flex justify-center py-16 scroll-mt-24">
+            <div className="w-full max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-10">
 
                 <div className="flex flex-col text-center gap-2 md:gap-2 md:text-center">
-                    <span className="section-tag">Lets Get Started</span>
-                    <h2 className='text-2xl md:text-6xl font-bold'>Ready to Transform Your Ideas?</h2>
-                    <p className='font-body font-light text-sm md:text-[1rem]'>Don't let another day pass wondering "what if." Your competition isn't waiting, and neither should you. Let's build something amazing together.</p>
+                    <span className="section-tag">Let's Get Started</span>
+                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[color:var(--ink)]" data-scrub-headline>Ready to transform your ideas?</h2>
+                    <p className="font-body font-light text-sm sm:text-base text-[color:var(--ink-muted)]">Don't let another day pass wondering "what if." Your competition isn't waiting, and neither should you. Let's build something amazing together.</p>
                 </div>
 
-                <div className="w-full md:w-[70%] flex flex-col gap-4">
-                    <div className="flex flex-col gap-4 items-center">
-                        <div className="w-[80%] md:w-full flex flex-col gap-2 ">
-                            {/* <div>⚡</div> */}
-                            <div>
-                                <h4 className='text-xl flex gap-2 items-center'><span><CircleCheck className='text-green-300' /></span> Free Strategy Session</h4>
-                                <p className='text-sm'>30-minute consultation to discuss your project and explore possibilities</p>
+                <div className="w-full max-w-4xl flex flex-col gap-6">
+                    <div className="grid gap-4 sm:grid-cols-3">
+                        <Reveal>
+                            <div className="card-surface rounded-2xl p-5 flex flex-col gap-3">
+                                <h4 className="text-lg font-semibold flex gap-2 items-center text-[color:var(--ink)]">Free strategy session</h4>
+                                <p className="text-sm text-[color:var(--ink-muted)]">30-minute consultation to discuss your project and explore possibilities.</p>
                             </div>
-                        </div>
-                        <div className="w-[80%] md:w-full flex flex-col gap-2 ">
-                            {/* <div>⚡</div> */}
-                            <div>
-                                <h4 className='text-xl flex gap-2 items-center'> <span><Zap className='text-amber-300' /></span> Fast Turnaround</h4>
-                                <p className='text-sm'>Most projects start within 1 week of agreement</p>
+                        </Reveal>
+                        <Reveal delay={0.05}>
+                            <div className="card-surface rounded-2xl p-5 flex flex-col gap-3">
+                                <h4 className="text-lg font-semibold flex gap-2 items-center text-[color:var(--ink)]"> Fast turnaround</h4>
+                                <p className="text-sm text-[color:var(--ink-muted)]">Most projects start within one week of agreement.</p>
                             </div>
-                        </div>
-                        <div className="w-[80%] md:w-full flex flex-col gap-2 ">
-                            {/* <div className="benefit-icon">🛡️</div> */}
-                            <div className="benefit-text">
-                                <h4 className='text-xl flex gap-2 items-center'> <span><ShieldCheck className='text-amber-900' /></span> Risk-Free Guarantee</h4>
-                                <p className='text-sm'>Not satisfied with the initial work?, free iterations still not satisfied?, Get your money back, no questions asked</p>
+                        </Reveal>
+                        <Reveal delay={0.1}>
+                            <div className="card-surface rounded-2xl p-5 flex flex-col gap-3">
+                                <h4 className="text-lg font-semibold flex gap-2 items-center text-[color:var(--ink)]">Risk-free guarantee</h4>
+                                <p className="text-sm text-[color:var(--ink-muted)]">Not satisfied with the initial work? Get free iterations or your money back.</p>
                             </div>
-                        </div>
+                        </Reveal>
                     </div>
 
-                    <div className="mt-8 flex flex-col md:flex-row md:items-center gap-8">
-                        <div>
-                            <span className="text-xl text-gray-800 font-heading flex gap-2 items-center">
-                                <span className="material-symbols-outlined">phone_in_talk</span> Prefer Phone Call
-                            </span>
-
-                            <div className='mt-2'>
-                                <span className="text-sm font-body text-gray-700">+260 (965) 771 259 | +260 (770) 666 136</span>
+                    <Reveal>
+                        <div className="card-surface rounded-2xl p-6 sm:p-8 flex flex-col gap-6">
+                            <div>
+                                <span className="text-lg text-[color:var(--ink)] font-heading flex gap-2 items-center">
+                                    <span className="material-symbols-outlined">phone_in_talk</span> Prefer a phone call
+                                </span>
+                                <div className="mt-2">
+                                    <span className="text-sm font-body text-[color:var(--ink-muted)]">+260 (965) 771 259 | +260 (770) 666 136</span>
+                                </div>
                             </div>
 
-                        </div>
-
-                        <div>
-                            <span className="text-xl text-gray-800 font-heading flex gap-2 items-center">
-                                <span className="material-symbols-outlined">bubble</span> Prefer Socials
-                            </span>
-                            <div className="mt-2 flex gap-4">
-                                <span className="text-sm font-body text-gray-700"><a href="" target="_blank">Linkedin</a></span>
-                                <span className="text-sm font-body text-gray-700"><a href="" target="_blank">Facebook</a></span>
+                            <div>
+                                <span className="text-lg text-[color:var(--ink)] font-heading flex gap-2 items-center">
+                                    <span className="material-symbols-outlined">bubble</span> Prefer socials
+                                </span>
+                                <div className="mt-2 flex gap-4">
+                                    <span className="text-sm font-body text-[color:var(--ink-muted)]"><a href="#" target="_blank">LinkedIn</a></span>
+                                    <span className="text-sm font-body text-[color:var(--ink-muted)]"><a href="#" target="_blank">Facebook</a></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Reveal>
                 </div>
             </div>
         </section>

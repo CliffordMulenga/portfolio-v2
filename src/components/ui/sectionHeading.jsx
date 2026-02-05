@@ -1,9 +1,8 @@
-import React from 'react'
 
 const SectionHeading = ({title}) => {
   return (
     <div>
-      <p className='text-sm text-center text-gray-700 md:text-left md:text-xl font-bold'>{title}</p>
+      <p className="text-xs sm:text-sm text-center md:text-left uppercase tracking-[0.4em] font-semibold text-[color:var(--accent-strong)]">{title}</p>
     </div>
   )
 }

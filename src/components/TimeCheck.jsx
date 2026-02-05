@@ -28,17 +28,17 @@ const TimeCheck = () => {
   }, []);
 
   return (
-    <div className="absolute top-[15%] right-[20%] md:right-[5%] md:top-[15%] sm:top-[20%] bg-white/90 p-2 md:p-4 rounded-xl shadow-lg flex items-center gap-4">
-  <div className="w-12 h-12 md:w-16 md:h-16">
-    <TimeCheckLottie />
-  </div>
+    <div className="w-max rounded-xl border border-[color:var(--border)] bg-white/90 p-3 md:absolute md:right-0 md:top-0 md:p-4 shadow-[var(--shadow-soft)] flex items-center gap-4">
+      <div className="w-10 h-10 md:w-14 md:h-14">
+        <TimeCheckLottie />
+      </div>
 
-  <div className="text-left">
-    <h3 className="text-sm font-bold">Time Check</h3>
-    <p className="text-[12px] sm:text-sm">My Time: {myTime}</p>
-    <p className="text-[12px] sm:text-sm">Time Zone: GMT+2</p>
-  </div>
-</div>
+      <div className="text-left">
+        <h3 className="text-sm font-bold text-[color:var(--ink)]">Time Check</h3>
+        <p className="text-[12px] sm:text-sm text-[color:var(--ink-muted)]">My Time: {myTime}</p>
+        <p className="text-[12px] sm:text-sm text-[color:var(--ink-muted)]">Time Zone: GMT+2</p>
+      </div>
+    </div>
 
   );
 };
