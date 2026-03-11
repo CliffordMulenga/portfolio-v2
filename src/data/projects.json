@@ -292,11 +292,11 @@
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop"
     ],
     "snapshots": [
-      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/home-desktop.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/main-dashboard-desktop.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/results-center.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/admin-rules.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/add-pupils.png"
+      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/home-desktop.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/main-dashboard-desktop.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/results-center.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/admin-rules.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/results-management-sys/add-pupils.png?q=80&w=1200&auto=format&fit=crop"
     ],
     "results": [
       "Eliminated paper-based result processing",
@@ -337,16 +337,16 @@
       "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop"
     ],
     "snapshots": [
-      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/homepage.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/login.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Admin-dashboard.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/student%20takes%20exam.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Teacher%20adds%20questions.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/student%20exam%20page.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/student%20dashboard.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/view%20results.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Add%20student.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Add%20exam.png"
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/homepage.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/login.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Admin-dashboard.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/student%20takes%20exam.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Teacher%20adds%20questions.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/student%20exam%20page.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/student%20dashboard.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/view%20results.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Add%20student.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/ssms/Add%20exam.png?q=80&w=1200&auto=format&fit=crop"
     ],
     "results": [
       "Centralized student and academic records",
@@ -370,29 +370,30 @@
     "summary": "A conceptual passport application portal designed to simplify and digitize the passport application process for citizens in Zambia.",
     "role": [
       "UI/UX Design",
-      "Frontend Development"
+      "Development"
     ],
     "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
+      "React",
+      "Tailwind CSS",
+      "PHP",
+      "MySQL"
     ],
     "location": "Zambia",
     "heroImage": "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?q=80&w=1800&auto=format&fit=crop",
     "logo": "https://dummyimage.com/120x40/111/fff&text=Passport",
     "gallery": [
       "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581092334648-4d3e7f1c3b38?q=80&w=1200&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1684407617236-9baf926474ad?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
     ],
     "snapshots": [
-      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/homepage.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Admin-dashboard.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Application-tracking.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Applicant-Dashboard.png",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/homepage.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Admin-dashboard.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Application-tracking.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Applicant-Dashboard.png?q=80&w=1200&auto=format&fit=crop",
       "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/login.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Admin-Application-view.png",
-      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Application-flow.png"
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Admin-Application-view.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/online-passport-application-portal/Application-flow.png?q=80&w=1200&auto=format&fit=crop"
     ],
     "results": [
       "Improved accessibility to government services",
@@ -416,11 +417,12 @@
     "summary": "A corporate website for a professional services company offering CV writing, graphic design, and LinkedIn optimization services.",
     "role": [
       "Web Design",
-      "Frontend Development"
+      "Development"
     ],
     "stack": [
       "HTML",
       "CSS",
+      "Tailwind CSS",
       "JavaScript"
     ],
     "location": "Zambia",
@@ -432,9 +434,10 @@
       "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop"
     ],
     "snapshots": [
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop"
+      "https://ik.imagekit.io/cliffordthedesigner/projects/J&B-services/j&b1.png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/J&B-services/Screenshot%20(5).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/J&B-services/Screenshot%20(3).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/J&B-services/Screenshot%20(4).png?q=80&w=1200&auto=format&fit=crop"
     ],
     "results": [
       "Improved brand credibility",
@@ -447,9 +450,9 @@
     },
     "credits": []
   },
-  {
+  { 
     "id": "chef-academy",
-    "title": "Chef Academy of London Website Redesign",
+    "title": "Chef Academy of London Website Redesign Concept",
     "client": "Chef Academy of London",
     "date": "2025-01-16",
     "category": "Website Redesign",
@@ -458,7 +461,7 @@
     "summary": "A modern redesign of the Chef Academy of London website focused on clarity, visual appeal, and improved student engagement.",
     "role": [
       "UI/UX Design",
-      "Frontend Development"
+      "Development"
     ],
     "stack": [
       "React",
@@ -469,13 +472,16 @@
     "logo": "https://dummyimage.com/120x40/111/fff&text=Chef",
     "gallery": [
       "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1556912167-f556f1f39df1?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1543352634-5a4b24e6b8f3?q=80&w=1200&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1724015736616-60f63aaf72b2?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1605880319800-4f524f05436c?q=80&w=1200&auto=format&fit=crop"
     ],
     "snapshots": [
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1556912167-f556f1f39df1?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1543352634-5a4b24e6b8f3?q=80&w=1200&auto=format&fit=crop"
+      "https://ik.imagekit.io/cliffordthedesigner/projects/chef-academy-london/Screenshot%20(6).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/chef-academy-london/Screenshot%20(7).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/chef-academy-london/Screenshot%20(8).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/chef-academy-london/Screenshot%20(9).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/chef-academy-london/Screenshot%20(11).png?q=80&w=1200&auto=format&fit=crop"
+
     ],
     "results": [
       "Modernized brand presence",
@@ -483,8 +489,8 @@
       "Enhanced student enrollment experience"
     ],
     "links": {
-      "live": "",
-      "github": ""
+      "live": "https://chef-academy-tau.vercel.app/",
+      "github": "https://github.com/CliffordMulenga/chef-academyv2"
     },
     "credits": []
   },
@@ -498,7 +504,6 @@
     "featured": false,
     "summary": "A high-end landing page designed to showcase luxury limousine services with a focus on elegance, trust, and conversions.",
     "role": [
-      "UI Design",
       "Frontend Development"
     ],
     "stack": [
@@ -510,13 +515,14 @@
     "logo": "https://dummyimage.com/120x40/111/fff&text=Limo",
     "gallery": [
       "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1511910849309-0dffb8785146?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1592853625601-bb9d23da12fc?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1200&auto=format&fit=crop"
     ],
     "snapshots": [
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1511910849309-0dffb8785146?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1200&auto=format&fit=crop"
+      "https://ik.imagekit.io/cliffordthedesigner/projects/Luxury-Limo-Hire/Screenshot%20(12).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/Luxury-Limo-Hire/Screenshot%20(14).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/Luxury-Limo-Hire/Screenshot%20(13).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/Luxury-Limo-Hire/Screenshot%20(15).png?q=80&w=1200&auto=format&fit=crop"
     ],
     "results": [
       "Stronger premium brand perception",
@@ -524,10 +530,16 @@
       "High visual impact design"
     ],
     "links": {
-      "live": "",
-      "github": ""
+      "live": "https://luxurylimo.netlify.app/",
+      "github": "https://github.com/CliffordMulenga/Luxury-Limo-Hire-Landing-page"
     },
-    "credits": []
+    "credits": [
+      {
+        "name": "Usman A.",
+        "link":"https://dribbble.com/hello1usman",
+        "role":"Designer"
+      }
+    ]
   },
   {
     "id": "serenity",
@@ -543,8 +555,9 @@
       "Frontend Development"
     ],
     "stack": [
-      "React",
-      "Tailwind CSS"
+      "HTML",
+      "CSS",
+      "JavaScript"
     ],
     "location": "Remote",
     "heroImage": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1800&auto=format&fit=crop",
@@ -555,9 +568,10 @@
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop"
     ],
     "snapshots": [
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop"
+      "https://ik.imagekit.io/cliffordthedesigner/projects/serenity/Screenshot%20(22).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/serenity/Screenshot%20(21).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/serenity/Screenshot%20(19).png?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/cliffordthedesigner/projects/serenity/Screenshot%20(20).png?q=80&w=1200&auto=format&fit=crop"
     ],
     "results": [
       "Improved brand calmness and clarity",
@@ -565,8 +579,8 @@
       "Clear service presentation"
     ],
     "links": {
-      "live": "",
-      "github": ""
+      "live": "https://serenity-website.vercel.app/",
+      "github": "https://github.com/CliffordMulenga/Serenity-Website"
     },
     "credits": []
   }

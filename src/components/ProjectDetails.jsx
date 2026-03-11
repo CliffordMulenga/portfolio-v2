@@ -17,6 +17,55 @@ const ProjectDetails = ({ project }) => {
     })
   }
 
+  const renderCredit = (credit, index) => {
+    if (!credit || typeof credit !== 'object') {
+      return <li key={`credit-${index}`}>{String(credit)}</li>
+    }
+
+    if ('name' in credit) {
+      const label = credit.role ? `${credit.name} : ${credit.role}` : credit.name
+      return (
+        <li key={`${credit.name}-${credit.role || index}`}>
+          {credit.link ? (
+            <a
+              href={credit.link}
+              target="_blank"
+              rel="noreferrer"
+              className="underline decoration-1 underline-offset-4 hover:opacity-70"
+            >
+              {label}
+            </a>
+          ) : (
+            label
+          )}
+        </li>
+      )
+    }
+
+    const [label, value] = Object.entries(credit)[0] || []
+    if (!label) {
+      return <li key={`credit-${index}`}>Unknown credit</li>
+    }
+
+    const isLink = typeof value === 'string' && /^https?:\/\//.test(value)
+    return (
+      <li key={`${label}-${index}`}>
+        {isLink ? (
+          <a
+            href={value}
+            target="_blank"
+            rel="noreferrer"
+            className="underline decoration-1 underline-offset-4 hover:opacity-70"
+          >
+            {label}
+          </a>
+        ) : (
+          `${label} : ${value ?? ''}`
+        )}
+      </li>
+    )
+  }
+
   return (
     <section id={`project-${project.id}`} className="scroll-mt-24">
       <header className="case-header px-6 sm:px-10 lg:px-12">
@@ -48,13 +97,9 @@ const ProjectDetails = ({ project }) => {
             <div className="stripe" />
             <ul className="space-y-1 text-base text-[color:var(--ink)]">
               {project.credits?.length ? (
-                project.credits.map((credit) => (
-                  <li key={`${credit.name}-${credit.role}`}>
-                    {credit.name} : {credit.role}
-                  </li>
-                ))
+                project.credits.map((credit, index) => renderCredit(credit, index))
               ) : (
-                <li>Solo project : Design + Development</li>
+                <li></li>
               )}
             </ul>
           </div>
